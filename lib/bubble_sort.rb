@@ -1,20 +1,19 @@
-require 'pry'
 class BubbleSort
 
-  def sort(unsorted)
+  def sort(num_array)
     sorted = false
     while !sorted do
       sorted = true
-      counter = 0
-      ((unsorted.length) -1).times do
-        if unsorted[counter] > unsorted[counter + 1]
-          unsorted[counter], unsorted[counter + 1] = unsorted[counter + 1], unsorted[counter]
+      index_count = 0
+      ((num_array.length) -1).times do
+        if num_array[index_count] > num_array[index_count + 1]
+          num_array[index_count], num_array[index_count + 1] = num_array[index_count + 1], num_array[index_count]
           sorted = false
         end
-        counter += 1
+        index_count += 1
       end
     end
-    unsorted
+    num_array
   end
 
 end
