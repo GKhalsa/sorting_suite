@@ -9,11 +9,10 @@ class InsertionSort
           num_array[i - 1], num_array[i] = num_array[i], num_array[i - 1]
           i -= 1
         elsif
-          i += 1
+          i +=  1
         end
         break if i > num_array.count - 1
       end
-      i += 1
     end
     num_array
    end
