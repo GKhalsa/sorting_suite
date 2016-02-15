@@ -13,4 +13,13 @@ class InsertionSortTest < Minitest::Test
     assert_equal [1,2,3], sorter.sort([2,1,3])
   end
 
+  def test_insertion_thrice
+    sorter = InsertionSort.new
+    assert_equal [1,2,3,4], sorter.sort([2,3,1,4])
+  end
+
+  def test_insertion_thrice
+    sorter = InsertionSort.new
+    assert_equal [1,2,3,4,5], sorter.sort([5,4,3,2,1])
+  end
 end
