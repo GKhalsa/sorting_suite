@@ -60,6 +60,8 @@ class SortingSuite
       end
       merged + left + right
     end
+    
+  end
 
   class Benchmark
     def time(sorter, unsorted_array)
