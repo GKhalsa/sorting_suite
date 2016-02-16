@@ -1,3 +1,4 @@
+require 'benchmark'
 class SortingSuite
 
   class BubbleSort
@@ -72,24 +73,13 @@ class SortingSuite
       start = Time.new.to_f
       sorter.new.sort(unsorted_array)
       finish = Time.new.to_f
-      time = (finish - start)
-      stopwatch_response(sorter,time)
+      duration = (finish - start)
+      stopwatch_response(sorter, duration)
     end
 
     def stopwatch_response(sorter,time)
-      "#{sorter.to_s.split("::")[1]} took #{time} seconds"
+      "#{sorter.to_s.split("::")[1]} took #{duration} seconds"
     end
-
-    def fastest
-    end
-
-    def slowest
-    end
-
   end
 
 end
-benchmark = SortingSuite::Benchmark.new
-puts benchmark.time(SortingSuite::MergeSort, [1,2,3,4,0]) # => nil
-
-# >> MergeSort took 0.00016999244689941406 seconds
