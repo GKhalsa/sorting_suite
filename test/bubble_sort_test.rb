@@ -8,7 +8,7 @@ class BubbleSortTest < Minitest::Test
     sorter = BubbleSort.new
     assert_equal [1,2], sorter.sort([2,1])
   end
-
+  meta single: true
   def test_sort_three_numbers
     sorter = BubbleSort.new
     assert_equal [1,2,3], sorter.sort([3,2,1])

@@ -1,5 +1,5 @@
 require 'benchmark'
-class SortingSuite
+module SortingSuite
 
   class BubbleSort
 

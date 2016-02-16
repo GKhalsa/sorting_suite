@@ -7,7 +7,7 @@ class InsertionSort
           num_array[i - 1], num_array[i] = num_array[i], num_array[i - 1]
           i -= 1
         else
-          i +=  1
+          i += 1
         end
       end
     end
