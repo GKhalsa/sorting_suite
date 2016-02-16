@@ -47,4 +47,9 @@ class InsertionSortTest < Minitest::Test
     assert_equal [1], sorter.sort([1])
   end
 
+  def test_insertion_on_repeat_numbers
+    sorter = MergeSort.new
+    assert_equal [0, 1, 2, 3, 3, 3, 4, 5, 8, 44], sorter.sort([4,3,2,1,0,8,3,3,5,44])
+  end
+
 end

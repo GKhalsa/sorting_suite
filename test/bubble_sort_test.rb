@@ -44,4 +44,14 @@ class BubbleSortTest < Minitest::Test
     assert_equal [1,2,3,4], sorter.sort([1,2,3,4])
   end
 
+  def test_bubble_sort_on_repeat_numbers
+    sorter = MergeSort.new
+    assert_equal [0, 1, 2, 3, 3, 3, 4, 5, 8, 44], sorter.sort([4,3,2,1,0,8,3,3,5,44])
+  end
+
+  def test_bubble_sort_with_letters_and_symbols
+    sorter = InsertionSort.new
+    assert_equal ["%","*","a","b","c","d"], sorter.sort(["*","d","c","a","b","%"])
+  end
+
 end
