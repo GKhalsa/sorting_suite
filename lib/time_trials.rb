@@ -13,6 +13,7 @@ class TimeTrials
     start = Time.new.to_f
     i = 0
     while i < 9999999
+      i
       i += 1
     end
     finish = Time.new.to_f
@@ -52,4 +53,4 @@ class TimeTrials
 end
 
 time = TimeTrials.new
-time.times_do
+time.while_loop

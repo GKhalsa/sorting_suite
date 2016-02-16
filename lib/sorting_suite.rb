@@ -90,4 +90,6 @@ class SortingSuite
 
 end
 benchmark = SortingSuite::Benchmark.new
-puts benchmark.time(SortingSuite::InsertionSort, [1,2,3,4,0]) # => nil
+puts benchmark.time(SortingSuite::MergeSort, [1,2,3,4,0]) # => nil
+
+# >> MergeSort took 0.00016999244689941406 seconds

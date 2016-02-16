@@ -11,25 +11,14 @@ class MergeSort
 
   def merge(left, right)
     merged = []
-    while left[0] && right[0]
-      if left[0] < right[0]
+    until left.empty? || right.empty?
+      if left[0] <= right[0]
         merged << left.shift
-        if left[0].nil?
-          merged << right
-        end
       else
         merged << right.shift
-        if right[0].nil?
-          merged << left
-        end
       end
     end
-    merged.flatten
+    merged + left + right
   end
-end
 
-#(0,1,2,3,4).each do |num|
-#if left[num] <=> right[num] == -1
-#merged << left.push
-#elsif 1
-#merged << right.push
+end

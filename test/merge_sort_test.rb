@@ -30,22 +30,22 @@ class MergeSortTest < Minitest::Test
   end
 
   def test_merge_pre_sorted
-    sorter = InsertionSort.new
+    sorter = MergeSort.new
     assert_equal [1,2,3,4,5], sorter.sort([1,2,3,4,5])
   end
 
   def test_merge_empty_array
-    sorter = InsertionSort.new
+    sorter = MergeSort.new
     assert_equal [], sorter.sort([])
   end
 
   def test_merge_one_letter
-    sorter = InsertionSort.new
+    sorter = MergeSort.new
     assert_equal [1], sorter.sort([1])
   end
 
   def test_merge_letters_with_symbols
-    sorter = InsertionSort.new
+    sorter = MergeSort.new
     assert_equal ["%","*","a","b","c","d"], sorter.sort(["*","d","c","a","b","%"])
   end
 
