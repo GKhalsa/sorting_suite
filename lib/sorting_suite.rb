@@ -60,14 +60,14 @@ class SortingSuite
       end
       merged + left + right
     end
-    
+
   end
 
   class Benchmark
     def time(sorter, unsorted_array)
-      start = Time.new.to_f
+      start = Time.new
       sorter.new.sort(unsorted_array)
-      finish = Time.new.to_f
+      finish = Time.new
       duration = (finish - start)
       stopwatch_response(sorter, duration)
     end
