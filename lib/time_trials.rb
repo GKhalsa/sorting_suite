@@ -1,4 +1,5 @@
 class TimeTrials
+
   def for_loop
     start = Time.new.to_f
     for i in 0..9999999
@@ -51,6 +52,3 @@ class TimeTrials
     #varies wildy from .410 - .444
   end
 end
-
-time = TimeTrials.new
-time.while_loop
