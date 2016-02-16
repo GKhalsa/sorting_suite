@@ -20,16 +20,16 @@ class BubbleSort
   end
 
   def compare_previous_index_with_current(num_array, index)
-    previous = num_array[index]
-    current = num_array[index + 1]
-    if previous > current
-      swapped = swap!(num_array, previous = index, current = index + 1)
+    previous_index = num_array[index]
+    current_index = num_array[index + 1]
+    if previous_index > current_index
+      swapped = swap!(num_array, previous_index = index, current_index = index + 1)
       @sorted = false
     end
   end
 
-  def swap!(num_array, previous, current)
-    num_array[previous], num_array[current] = num_array[current], num_array[previous]
+  def swap!(num_array, previous_index, current_index)
+    num_array[previous_index], num_array[current_index] = num_array[current_index], num_array[previous_index]
   end
 
 end
