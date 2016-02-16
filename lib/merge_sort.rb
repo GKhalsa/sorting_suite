@@ -27,3 +27,9 @@ class MergeSort
     merged.flatten
   end
 end
+
+#(0,1,2,3,4).each do |num|
+#if left[num] <=> right[num] == -1
+#merged << left.push
+#elsif 1
+#merged << right.push
